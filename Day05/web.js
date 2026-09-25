@@ -112,7 +112,12 @@ function show(img){
 }
 
 
-function addCart(){
+let cartCount = 0;
+
+function addCart() {
+    cartCount++;
+
+    document.getElementById("cartCount").innerText = cartCount;
+
     alert("Added To Cart");
-    location.reload()
 }
